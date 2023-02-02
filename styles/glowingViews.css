@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.yellowPhoneContainer{
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.officeImgPhone{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* display: none; */
+}
+
+.glow-item {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    top: 453px;
+    left: 428px;
+  }
+
+.card {
+    height: 100px;
+    width: 110px;
+    position: relative;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #48abe0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 50px 15px #48abe0;
+}
+
+.card.shadow-animate {
+    box-shadow: 0px 0px 20px 10px #48abe0;
+    animation: shadows 1.5s infinite;
+}
+
+.card.shadow-animate {
+    box-shadow: 0px 0px 20px 10px #48abe0;
+    animation: shadows 1.5s infinite;
+}
+
+#library{
+    top: 330px;
+    left: 910px;
+}
+
+#libraryDiv{
+    height: 125px;
+    width: 263px;
+    transform: perspective(10px) rotateX(1deg);
+    rotate: 270deg;
+    position: relative;
+    z-index: 20;
+}
+
+
+@keyframes shadows {
+    0% {
+      text-shadow: rgb(242, 234, 207) 0 0 10px;
+      box-shadow: 0px 0px 20px 10px rgb(242, 234, 207);
+    }
+    50% {
+      text-shadow: rgb(218, 216, 99) 0 0 10px;
+      box-shadow: 0px 0px 20px 10px rgb(218, 216, 99);
+    }
+    75% {
+      text-shadow: yellow 0 0 10px;
+      box-shadow: 0px 0px 20px 10px yellow;
+    }
+    100% {
+      text-shadow: rgb(242, 234, 207) 0 0 10px;
+      box-shadow: 0px 0px 20px 10px rgb(242, 234, 207);
+    }
+  }

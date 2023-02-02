@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* *******************************************************challenge 1*************************************************************************************** */
+.challenge2Container{
+display: none;
+}
+
+.officeImg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.officeContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.officeContainers{
+    position: relative;
+    height: 33%;
+    width: 100%;
+}
+
+/* .officeDown{
+    background-color: yellow;
+} */
+
+#lockMarker{
+    /* background-color: orange; */
+    position: relative;
+    height: 120px;
+    width: 120px;
+    top: 15px;
+    left: 330px;
+    /* display: none; */
+}
+
+#imgLock{
+    height: 300px;
+    width: 300px;
+    display: none;
+    position: absolute;  
+}
+
+.lockContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#numInputs{
+    /* background-color: yellow; */
+    height: 300px;
+    width: 260px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.num{
+    text-align: center;
+    /* background-color: red; */
+    height: 30px;
+    width: 30px;
+    font-size: 26px;
+}
+
+.lastNum{
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.spacingDivs{
+    height: 33%;
+}
+
+
+#closingTag:hover, .submitButton:hover, .closingTagMap:hover{
+color: rgb(108, 105, 105);
+cursor: pointer;
+}
+
+#clue1, #clue2{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    left: 500px;
+    top: 300px;
+    z-index: 15;
+    display: none;
+}
+
+.painting1, .painting2, .painting3{
+    position: relative;
+}
+
+#painting1{
+    height: 150px;
+    width: 120px;
+    background-color: transparent;
+    z-index: 1;
+    top: 280px;
+    left: 250px;
+    /* display: none; */
+}
+
+.officeMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.submitButton{
+    margin-top: -39px;
+    z-index: 1;
+}
+
+#painting2{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    z-index: 2;
+    left: 880px;
+    top: 130px;
+    /* display: none; */
+}
+
+
+/* /* #clue2 {
+    /* position: relative;
+    height: 200px;
+    width: 200px;
+    left: 700px;
+    top: 500px;
+    display: none; */
+    /* z-index: 10;
+}  */
+
+#clue2{
+    display: flex;
+    position: relative;
+    display: none;
+}
+
+#painting3{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    z-index: 3;
+    left: 1080px;
+    top: 65px;
+    /* display: none; */
+}
+
+#clue3{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    z-index: 5;
+}
+
+.imgMap{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    z-index: 5;
+    left: 500px;
+    display: none;
+}
+
+#map{
+    position: absolute;
+    top: -30px;
+}
+
+#xOnMap{
+    position: relative;
+    top: 45px;
+    left: 360px;
+}
+
+#xOnMap:hover{
+    cursor: pointer;
+}
+
+.closingTagMap{
+    position: relative;
+    z-index: 3;
+    left: 413px;
+}
+
+.hidden{
+    display: none;
+    opacity: 0;
+    transition: visibility 0s, opacity 1.5s linear;
+}
+
+.turnGreen{
+    color: #3dff3e;
+}
+
+#lockMarkUpGlowing {
+    top: 2px;
+    left: -17px;
+}
+
+#corrector{
+    top: 0;
+    left: 0
+}
+
+/* ******************************************************************wining condition********************************************************************** */
+#openingDoor{
+display: none;
+}
+
+
+#officeImgOpeningDoor{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.door {
+    position: absolute;
+    top: 290px;
+    left: 700px;
+    width: 170px;
+    height: 200px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    rotate: -1deg;
+}
+.door-front {
+    width: 170px;
+    height: 209px;
+    overflow: hidden;
+    transform-origin: right;
+    box-shadow: 30px 0 50px rgba(0,0,0,0.2);
+    position: absolute;
+    background-color: #fcf6d7;
+    z-index: 1;
+    transition: .5s;
+}
+  .door-front:before, .door-front:after {
+    content:"";
+    position: absolute;
+    background-color: #FCF6D7;
+    width: 105px;
+    height: 75px;
+    border: 10px ridge #F0E7B9;
+    left:22.5px;
+  }
+  .door-front:before {
+    top:25px;
+  }
+  .door-front:after {
+    top:155px;
+  }
+  .knob {
+    position: absolute;
+    width: 20px;
+    height:30px;
+    background-color:#2b291e;
+    top:122px;
+    right:145px;
+    border-radius:2px;
+  }
+  .knob:before {
+    content:"";
+    position: absolute;
+    border-radius:50%;
+    background-color: black;
+    width:18px;
+    height:18px;
+    left:-1px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+  }
+  .knob:after {
+    content:"";
+    position: absolute;
+    width:4px;
+    height:7px;
+    background-color: #2B291E;
+    top:20px;
+    left:8.5px;
+  }
+  /* .door:hover .door-front {
+    transform: rotateY(-95deg);
+  } */
+  .door-back {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 10px solid #F0E7B9;
+    z-index: -1;
+}
+  .fondo {
+    position: absolute;
+    top: 290px;
+    left: 700px;
+    z-index: 0;
+    background-color: black;
+    width: 170px;
+    height: 200px;
+}
+
+/* *************************************************************winning condition video*********************************************************************** */
+
+.videoWinningCondition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: none;
+}
+
+#firstWinMessage, #secondWinMessage{
+    display: none;
+}
+
+
+
+
+

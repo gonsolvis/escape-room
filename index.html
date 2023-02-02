@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/explanation.css">
+    <link rel="stylesheet" href="./styles/glowingViews.css">
+    <link rel="stylesheet" href="./styles/patata.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+    <title>EscapeRoom</title>
+</head>
+<body>
+    <!-- *************************************************nav************************************************************ -->
+    <nav id="navBar">
+        <div class="smallerContainerNav">
+            <div class="tests">
+                <p class="testCompleted" id="test1">Test 1</p>
+                <p class="testCompleted"  id="test2">Test 2</p>
+                <p class="testCompleted"  id="test3">Test 3</p>
+            </div>
+            <div>
+                <p id="contador">Time left : 02:00</p>
+            </div>
+        </div>
+    </nav>
+    <!-- *****************************************presentation************************************************** -->
+    <div class="presentationContainer" id="presentationContainer">
+        <video type="video/mp4" src="./video/Vídeo sin título ‐ Hecho con Clipchamp (6).mp4" autoplay muted loop="true"></video>
+        <div class="contenedor header">
+            <div class="contenidoDescripcion">
+                <div>
+                    <h1 class="titulo">
+                        <span>Escape Room</span>
+                    </h1>
+                    <article class="descripcion">
+                        <p class="btn-link" id="getStartedButton">Get Started</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- ***********************************************explanation******************************************** -->
+        <div class="explanationContainer" id="explanationContainer">
+            <img src="./img/Beast_Office.jpg" alt="" id="explanationImg">
+            <div class="typewriter"> 
+            <h1 id="h1Explanation">Find the clues in order to leave the room, things are not what they seem.
+            </div>
+            <div class="typewriter sentences" id="secondSentence"> 
+                <h1 id="h1Explanation">Solve the three challenges to unlock the door and gain your freedom.
+            </div>
+            <div class="typewriter sentences" id="thirdSentence"> 
+                <h1 id="h1Explanation">Oh and you have only two minutes to do it...
+            </div>
+            <div class="typewriter sentences" id="fourthSentence"> 
+                <h1 id="h1Explanation">Break a leg.
+            </div>
+        </div>
+    <!-- *****************************************Glowing library************************************************************ -->
+    <div class="yellowPhoneContainer" id="yellowPhoneContainer">
+        <img src="./img/Beast_Office.jpg" alt="" class="officeImgPhone">
+        <div class="glow-item" id="library">
+            <div class="card shadow-animate" id="libraryDiv"></div>
+        </div>
+    </div>
+    <!-- ************************************************challenge 1****************************************************************** -->
+    <div class="challenge3Container" id="challenge3Container">
+        <div class="instruccionesPatata">
+            <h1>Ordena el siguiente anagrama:</h1>
+            <p>atapta</p>
+        </div>
+        <div class="patataDivs">
+            <div class="patata">
+                <input type="text" id="letter1" placeholder="a" maxlength="1">
+            </div>
+            <div class="patata">
+                <input type="text" id="letter2" placeholder="t" maxlength="1">
+            </div>            
+            <div class="patata">
+                <input type="text" id="letter3" placeholder="a" maxlength="1">
+            </div>            
+            <div class="patata">
+                <input type="text" id="letter4" placeholder="p" maxlength="1">
+            </div>            
+            <div class="patata">
+                <input type="text" id="letter5" placeholder="t" maxlength="1">
+            </div>            
+            <div class="patata">
+                <input type="text" id="letter6" placeholder="a" maxlength="1">
+            </div>   
+        </div>
+        <button class="patataButton" id="patataButton">Enter</button>
+    </div>
+    <!-- ***************************************phone Glowing********************************************* -->
+    <div class="yellowPhoneContainer" id="glowingPhoneContainer">
+        <img src="./img/Beast_Office.jpg" alt="" class="officeImgPhone">
+        <div class="glow-item" id="glowingPhone">
+            <div class="card shadow-animate"></div>
+        </div>
+    </div>
+    <!-- **********************************challenge 2*********************************************** -->
+    <div class="challenge2Container" id="challenge2Container">
+        <img src="./img/Beast_Office.jpg" alt="" class="officeImg">
+        <div class="officeContainer" id="officeContainer">
+            <img src="./img/framed-photo.jpg" alt="" class="clue1" id="clue1">
+            <img src="./img/3e0c65ce2c14353b8bb9ce4695ba0927.jpg" alt="" id="clue2">
+            <div class="glow-item" id="corrector">
+                <div class="painting1 card shadow-animate corrector" id="painting1"></div>
+            </div>
+            <div class="glow-item corrector" id="corrector">
+            <div class="painting2 card shadow-animate" id="painting2"></div>
+            </div>
+            <div class="glow-item" id="corrector">
+            <div class="painting3 card shadow-animate corrector" id="painting3"></div>
+        </div>
+            <div class="officeUp officeContainers"></div>
+            <div class="officeMiddle officeContainers" id="officeMiddle">
+                <div class="lockContainer">
+                    <img src="./img/lock.jpg" alt="" id="imgLock">
+                    <div class="closingTag"></div>
+                    <div id="numInputs">
+                        <div class="num">
+                        <input type="tex" class="num" maxlength="1" id="input1">
+                        </div>
+                        <div class="num">
+                        <input type="text" class="num" maxlength="1" id="input2">
+                        </div>
+                        <div class="num">
+                        <input type="text" class="num" maxlength="1" id="input3">
+                        </div>
+                        <div class="num lastNum">
+                        <div class="spacingDivs" id="closingTag">X</div>
+                        <input type="text" class="num" maxlength="1" id="input4">
+                        <div class="spacingDivs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submitButton" id="submitButton">Enter</div>
+            </div>
+            <div class="officeDown officeContainers">
+                <div class="glow-item" id="lockMarkUpGlowing">
+                <div id="lockMarker" class="card shadow-animate"></div>
+            </div>
+            </div>
+            <div class="imgMap" id="clue3">
+                <p class="closingTagMap" id="closingTagMap">Close</p>
+                <img src="./img/find the x.png" alt="" id="map">
+                <p class="xOnMap" id="xOnMap">X</p>
+            </div>
+        </div>
+    </div>
+        <!-- **********************************challenge 3*********************************************** -->
+        <div class="challenge1Container" id="lastChallengeContainer">
+            <img class="mainImg" src="./img/escape-room.jpg" alt="">
+            <div class="generalContainer">
+                <img src="./img/istockphoto-478384809-612x612.jpg" alt="" class="imgClue" id="imgVintage">
+                <img src="./img/fposter,small,wall_texture,product,750x1000.jpg" alt="" class="imgClue" id="imgPolice">
+                <img src="./img/lockLastChallenge.jpg" class="imgClue" alt="" id="imgLocker">
+                <div class="upper">
+                </div>
+                <div class="middle">
+                    <h1 id="h1LastChallenge">What is at the end of everythin<span id="gHover">g</span>?</h1>
+                    <div class="inputDiv"><input type="text" placeholder="..." id="lastChallengeInput"></div>
+                </div>
+                <div class="lower">
+                    <div class="leftContainer lowerClues" id="firstClue"></div>
+                    <div class="middleContainer" id="secondClue">
+                        <div class="lowerClues"></div>
+                    </div>
+                    <div class="rightContainer lowerClues" id="thirdClue"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ***********************************************loosing condition*************************************************** -->
+        <div class="loosingCondition" id="loosingCondition">
+            <video src="./video/MATRIX EFFECT ‐ Hecho con Clipchamp.mp4"  autoplay muted loop="true"></video>
+            <h1 id="loosingh1">
+                Oops.... your time is up.
+            </h1>
+            <article class="loosing">
+                <a href="javascript:location.reload()" class="btn-link">Try Again?</a>
+            </article>
+        </div>
+        <!-- **************************************************wining condition door opening************************************************************* -->
+        <div id="openingDoor">
+            <img src="./img/Beast_Office.jpg" alt="" id="officeImgOpeningDoor">
+            <div>
+                <div class="fondo"></div>
+                <div class="door">
+                  <div class="door-front" id="doorFront">
+                    <div class="knob"></div>
+                  </div>
+                  <div class="door-back">
+                  </div>
+                </div>
+                </div>
+        </div>
+        <!-- **************************************************wining condition video************************************************************* -->
+        <div class="videoWinningCondition" id="videoWinningCondition">
+            <video src="./video/winningvideo.mp4" autoplay muted></video>
+            <div class="typewriter sentences" id="firstWinMessage"> 
+                <h1 id="h1Explanation">You've escaped
+            </div>
+            <div class="typewriter sentences" id="secondWinMessage"> 
+                <h1 id="h1Explanation">For now...
+            </div>
+        </div>
+    <script src="./js/presentation.js"></script>
+    <script src="./js/challenge1.js"></script>
+    <script src="./js/challenge2.js"></script>
+    <script src="./js//challenge3.js"></script>
+    <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+</body>
+</html>
