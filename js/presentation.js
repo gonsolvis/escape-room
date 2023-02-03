@@ -56,7 +56,6 @@ function updateContador() {
             }
 }
 
-
 getStartedButton.addEventListener("click", ()=>{
     presentationContainer.classList.add("hidden");
     explanationContainer.style.display = "flex"
