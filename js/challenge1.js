@@ -31,10 +31,14 @@ patataButton.addEventListener("click", ()=>{
     let answer = l1+l2+l3+l4+l5+l6
     if(answer===result){
         test1.classList.add("turnGreen");
+        challenge1container.style.display = "none"
+        glowingPhoneCont.style.display="block"
+        audio.play()
+    }else{
+        patataButton.style.color = "red";
+        patataButton.style.fontWeight = "bold"
+        patataButton.innerText = "incorrect"
     }
-    challenge1container.style.display = "none"
-    glowingPhoneCont.style.display="block"
-    audio.play()
 })
 
 glowingPhone.addEventListener("click", ()=>{
